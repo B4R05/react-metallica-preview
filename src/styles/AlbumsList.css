@@ -1,5 +1,7 @@
 .container {
   animation: 2.2s fadein ease;
+  width: 920px !important;
+  padding-left: 4.2%;
 }
 
 @keyframes fadein {
@@ -9,5 +11,26 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+.ui.cards {
+  margin: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.stackable.cards {
+    display: flex !important;
+  }
+  .ui.stackable.cards > .card {
+    width: 120px !important;
+  }
+
+  .ui.stackable.cards .card:first-child {
+    margin-top: auto !important;
+  }
+
+  .container {
+    padding-left: 8vw;
   }
 }
