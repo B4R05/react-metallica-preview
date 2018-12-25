@@ -5,6 +5,10 @@ import Album from "./Album";
 import "../styles/AlbumsList.css";
 
 class AlbumsList extends React.Component {
+  state = {
+    loading: false
+  };
+
   componentDidMount() {
     this.props.getAllAlbums();
   }
@@ -17,7 +21,7 @@ class AlbumsList extends React.Component {
 
   render() {
     return (
-      <div className="ui container seven stackable cards">
+      <div className="ui container seven stackable cards albumslist-intro ">
         {this.renderAlbums()}
       </div>
     );

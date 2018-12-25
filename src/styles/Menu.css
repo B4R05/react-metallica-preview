@@ -1,0 +1,18 @@
+.menu {
+  position: fixed;
+  text-align: center;
+  right: 2vw;
+  top: 2vh;
+  border: 0 !important;
+  width: 100px !important;
+  box-shadow: 0px 10px 100px -10px rgba(0, 0, 0, 0.75) !important;
+  cursor: pointer;
+}
+
+.menu:hover {
+  background-color: darkgray !important;
+}
+
+.menu:active {
+  background-color: gray !important;
+}

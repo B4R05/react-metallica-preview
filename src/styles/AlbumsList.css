@@ -1,21 +1,30 @@
 .container {
-  animation: 2.2s fadein ease;
   width: 920px !important;
-  padding-left: 4.2%;
+  padding-left: 4.1%;
+}
+
+.albumslist-intro {
+  animation: 0.5s fadein ease;
 }
 
 @keyframes fadein {
   0% {
-    opacity: 0.8;
+    filter: blur(10px);
     transform: translate(0%, 4%);
   }
   100% {
-    opacity: 1;
+    filter: blur(0px);
   }
 }
 
 .ui.cards {
   margin: 0;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 45%;
 }
 
 @media only screen and (max-width: 767px) {

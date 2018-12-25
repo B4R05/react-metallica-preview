@@ -1,0 +1,46 @@
+#play {
+  cursor: pointer;
+}
+
+img#play-icon {
+  padding: 10px;
+}
+
+.audio-player {
+  background: url("/glitch.webp");
+  height: 10rem;
+  border-radius: 3px;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.audio-player:hover {
+  transition: 0.2s;
+  transform: scale(1.1);
+  box-shadow: 12px 25px 49px -19px rgba(0, 0, 0, 0.75) !important;
+}
+.item {
+  transition: 0.5s;
+}
+.ui.list {
+  width: calc(100% - 100px);
+}
+
+.content {
+  padding: 3px !important;
+}
+
+.fade {
+  animation: 0.5s fade ease !important;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translate(-1%, 0%);
+  }
+  100% {
+    opacity: 1;
+  }
+}

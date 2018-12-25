@@ -1,4 +1,9 @@
-.album--resize {
+img {
+  width: auto;
+  margin: 0;
+}
+
+.album-card {
   cursor: pointer;
   width: 120px !important;
   background: url("/glitch.webp") !important;
@@ -6,17 +11,23 @@
   box-shadow: 12px 15px 49px -19px rgba(0, 0, 0, 0.75) !important;
 }
 
-.album--resize:hover {
+.album-card:hover {
   transition: 0.1s !important;
   transform: scale(1.1);
 }
 
-.album--resize:hover .hidden {
+.album-card:hover .hidden {
   opacity: 0.8;
 }
 
-.album--resize:active {
-  transform: scale(0.9);
+.album-active {
+  animation: 0.5s active ease;
+}
+
+@keyframes active {
+  100% {
+    filter: blur(50px);
+  }
 }
 
 .hidden {

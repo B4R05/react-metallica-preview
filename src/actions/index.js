@@ -8,16 +8,13 @@ export const getAllAlbums = () => async dispatch => {
       limit: 40
     });
 
-    const filtered = response.results.filter(album => {
+    const filtered_albums = response.results.filter(album => {
       return album.wrapperType === "collection";
     });
 
-    console.log(response);
-    console.log(filtered);
-
     dispatch({
       type: "ALL_ALBUMS",
-      payload: filtered
+      payload: filtered_albums
     });
   } catch (err) {
     console.log(err);
@@ -32,16 +29,13 @@ export const getAlbumSongs = albumId => async dispatch => {
       limit: 20
     });
 
-    const filtered = response.results.filter(song => {
+    const filtered_songs = response.results.filter(song => {
       return song.kind === "song";
     });
 
-    console.log(response);
-    console.log(filtered);
-
     dispatch({
       type: "ALBUM_SONGS",
-      payload: filtered
+      payload: filtered_songs
     });
   } catch (err) {
     console.log(err);
