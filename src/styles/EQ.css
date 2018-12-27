@@ -1,0 +1,135 @@
+.equilizer {
+  height: 2.5rem;
+  width: 2.5rem;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0.5vh;
+  right: 1vw;
+  animation: 0.55s EQfade ease, 2s 28s fadeout ease;
+}
+
+.bar {
+  fill: rgba(45, 45, 45, 0.98);
+  width: 1.7rem;
+  animation: equalize 1.25s steps(25, end) 0s infinite;
+}
+
+.bar:nth-child(1) {
+  animation-duration: 1.9s;
+}
+
+.bar:nth-child(2) {
+  animation-duration: 2s;
+}
+
+.bar:nth-child(3) {
+  animation-duration: 2.3s;
+}
+
+.bar:nth-child(4) {
+  animation-duration: 2.4s;
+}
+
+.bar:nth-child(5) {
+  animation-duration: 2.1s;
+}
+
+@keyframes equalize {
+  0% {
+    height: 3.7rem;
+  }
+  4% {
+    height: 3.1rem;
+  }
+  8% {
+    height: 2.5rem;
+  }
+  12% {
+    height: 1.9rem;
+  }
+  16% {
+    height: 1.3rem;
+  }
+  20% {
+    height: 1.9rem;
+  }
+  24% {
+    height: 2.5rem;
+  }
+  28% {
+    height: 0.7rem;
+  }
+  32% {
+    height: 2.5rem;
+  }
+  36% {
+    height: 3.7rem;
+  }
+  40% {
+    height: 1.3rem;
+  }
+  44% {
+    height: 2.5rem;
+  }
+  48% {
+    height: 4.4rem;
+  }
+  52% {
+    height: 1.9rem;
+  }
+  56% {
+    height: 0.7rem;
+  }
+  60% {
+    height: 1.9rem;
+  }
+  64% {
+    height: 3.1rem;
+  }
+  68% {
+    height: 3.7rem;
+  }
+  72% {
+    height: 4.3rem;
+  }
+  76% {
+    height: 5rem;
+  }
+  80% {
+    height: 4.3rem;
+  }
+  84% {
+    height: 3.7rem;
+  }
+  88% {
+    height: 3.1rem;
+  }
+  92% {
+    height: 3.7rem;
+  }
+  96% {
+    height: 4.3rem;
+  }
+  100% {
+    height: 5rem;
+  }
+}
+
+@keyframes EQfade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

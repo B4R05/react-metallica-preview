@@ -5,6 +5,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "itunes-helper": "^1.0.4",
+    "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-modular-audio-player": "^1.1.1",
@@ -25,5 +26,10 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

@@ -1,6 +1,7 @@
 .container {
   width: 920px !important;
   padding-left: 4.1%;
+  padding-top: 2vh;
 }
 
 .albumslist-intro {
@@ -32,7 +33,7 @@
     display: flex !important;
   }
   .ui.stackable.cards > .card {
-    width: 120px !important;
+    width: 8.5rem !important;
   }
 
   .ui.stackable.cards .card:first-child {

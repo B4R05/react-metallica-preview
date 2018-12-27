@@ -5,7 +5,7 @@ import "../styles/Menu.css";
 const Menu = () => {
   return (
     <Link to="/" className="ui vertical menu">
-      <p className="item">Back</p>
+      Back
     </Link>
   );
 };

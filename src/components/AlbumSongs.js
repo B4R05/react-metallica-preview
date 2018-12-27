@@ -1,7 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { ScaleLoader } from "react-spinners";
-import { getAlbumSongs } from "../actions";
+import { getAlbumSongs, clearSongs } from "../actions";
 import AlbumSong from "./AlbumSong";
 import Menu from "./Menu";
 
@@ -14,6 +15,10 @@ class AlbumSongs extends React.Component {
     if (this.props.songs.length === 0) {
       this.setState({ loading: true });
     }
+  }
+
+  componentWillUnmount() {
+    this.props.clearSongs([]);
   }
 
   static getDerivedStateFromProps(props, state) {
@@ -36,20 +41,29 @@ class AlbumSongs extends React.Component {
       );
     }
 
-    return this.props.songs.map(song => {
-      return <AlbumSong data={song} key={song.trackId} />;
+    return this.props.songs.map((song, key) => {
+      return <AlbumSong data={song} key={key} />;
     });
   };
 
   render() {
     return (
-      <div className="ui container">
+      <div className="ui container ">
         <Menu />
         {this.renderAlbumSongs()}
       </div>
     );
   }
 }
+
+AlbumSongs.propTypes = {
+  songs: PropTypes.array.isRequired,
+  clearSongs: PropTypes.func.isRequired,
+  getAlbumSongs: PropTypes.func.isRequired,
+  history: PropTypes.object.isRequired,
+  location: PropTypes.object.isRequired,
+  match: PropTypes.object.isRequired
+};
 
 const mapStateToProps = state => {
   return {
@@ -59,5 +73,5 @@ const mapStateToProps = state => {
 
 export default connect(
   mapStateToProps,
-  { getAlbumSongs }
+  { getAlbumSongs, clearSongs }
 )(AlbumSongs);

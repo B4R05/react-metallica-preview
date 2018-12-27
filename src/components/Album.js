@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
 import "../styles/Album.css";
 
@@ -13,7 +14,7 @@ class Album extends React.Component {
     this.setState({ active: true }, () => {
       setTimeout(() => {
         this.props.history.push(`/albums/${id}`);
-      }, 100);
+      }, 200);
     });
   };
 
@@ -27,7 +28,7 @@ class Album extends React.Component {
       >
         <div className="image">
           <img src={this.props.info.artworkUrl100} alt="album cover" />
-          <div className="hidden" style={{ borderRadius: 3 }}>
+          <div className="hidden">
             <br />
             <small>
               <strong> {this.props.info.collectionName}</strong>
@@ -40,5 +41,15 @@ class Album extends React.Component {
     );
   }
 }
+
+Album.propTypes = {
+  info: PropTypes.shape({
+    collectionId: PropTypes.number.isRequired,
+    artworkUrl100: PropTypes.string.isRequired,
+    collectionName: PropTypes.string.isRequired,
+    releaseDate: PropTypes.string
+  }),
+  history: PropTypes.object.isRequired
+};
 
 export default withRouter(Album);

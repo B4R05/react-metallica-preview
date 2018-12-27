@@ -3,13 +3,13 @@
 }
 
 img#play-icon {
-  padding: 10px;
+  padding: 0.7rem;
 }
 
 .audio-player {
   background: url("/glitch.webp");
   height: 10rem;
-  border-radius: 3px;
+  border-radius: 0.28rem;
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,8 @@ img#play-icon {
 }
 
 .content {
-  padding: 3px !important;
+  padding: 0.18rem !important;
+  position: relative;
 }
 
 .fade {
@@ -37,8 +38,8 @@ img#play-icon {
 
 @keyframes fade {
   0% {
+    transform: translate(-5%);
     opacity: 0;
-    transform: translate(-1%, 0%);
   }
   100% {
     opacity: 1;
