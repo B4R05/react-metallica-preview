@@ -4,7 +4,7 @@ Explore Metallica albums and song previews through the itunes API. A small proje
 
 # Demo
 
-![](met.gif)
+![](met1.gif)
 
 # Installation 
 
