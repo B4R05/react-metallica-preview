@@ -8,7 +8,7 @@ https://metallica-c7a62.firebaseapp.com/
 
 # Demo
 
-![](met1.gif)
+![](met2.gif)
 
 # Installation 
 
