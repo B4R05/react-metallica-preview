@@ -8,7 +8,7 @@ https://metallica-c7a62.firebaseapp.com/
 
 https://codepen.io/GavBarosee/pen/dwzwGo
 
-# Demo
+# Preview
 
 ![](met3.gif)
 
