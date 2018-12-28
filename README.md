@@ -4,9 +4,12 @@ Explore Metallica albums and song previews through the itunes API. A small proje
 
 # Demo
 
+![](met1.gif)
+
+# Live Demo
+
 https://metallica-c7a62.firebaseapp.com/
 
-![](met1.gif)
 
 # Installation 
 
