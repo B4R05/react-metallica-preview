@@ -1,6 +1,6 @@
 # Metallica Itunes Preview
 
-Explore Metallica albums and song previews through the itunes API. A small project built with React and Redux.
+Explore Metallica albums and song previews through the itunes API. A small practice project built with React and Redux.
 
 # Demo
 
