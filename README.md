@@ -3,10 +3,9 @@
 Explore Metallica albums and song previews through the itunes API. A small project built with React and Redux.
 
 # Live Demos
+https://codepen.io/GavBarosee/pen/dwzwGo
 
 https://metallica-c7a62.firebaseapp.com/
-
-https://codepen.io/GavBarosee/pen/dwzwGo
 
 # Preview
 
